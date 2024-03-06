@@ -13,6 +13,8 @@ struct BookDetailview: View {
     @State private var author: String = ""
     @State private var publishedYear: Int?
     
+    @State private var showAddNewNote: Bool = false
+    
     init(book: Book) {
         self.book = book
         self._title = State.init(initialValue: book.title)
@@ -51,6 +53,25 @@ struct BookDetailview: View {
                 Text(book.title)
                 Text(book.author)
                 Text(book.publishedYear.description)
+            }
+            
+            Section("Notes") {
+                Button("Add new note") {
+                    showAddNewNote.toggle()
+                }
+                .sheet(isPresented: $showAddNewNote) {
+                    NavigationStack {
+                        AddNewNote(book: book)
+                    }
+                    .presentationDetents([.fraction(0.3)])
+                    .interactiveDismissDisabled()
+                }
+                
+                if book.notes.isEmpty {
+                    ContentUnavailableView("No notes!", systemImage: "note")
+                } else {
+                    NotesListView(book: book)
+                }
             }
         }
         .toolbar {
