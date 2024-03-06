@@ -13,6 +13,7 @@
 		CBFC051A2B987FFC006B92FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFC05192B987FFC006B92FB /* Preview Assets.xcassets */; };
 		CBFC05212B988065006B92FB /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05202B988065006B92FB /* Book.swift */; };
 		CBFC05242B988177006B92FB /* AddNewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05232B988177006B92FB /* AddNewBookView.swift */; };
+		CBFC05272B98D293006B92FB /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05262B98D293006B92FB /* BookListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		CBFC05192B987FFC006B92FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CBFC05202B988065006B92FB /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		CBFC05232B988177006B92FB /* AddNewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBookView.swift; sourceTree = "<group>"; };
+		CBFC05262B98D293006B92FB /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				CBFC05232B988177006B92FB /* AddNewBookView.swift */,
+				CBFC05262B98D293006B92FB /* BookListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				CBFC05242B988177006B92FB /* AddNewBookView.swift in Sources */,
 				CBFC05152B987FFA006B92FB /* ContentView.swift in Sources */,
+				CBFC05272B98D293006B92FB /* BookListView.swift in Sources */,
 				CBFC05132B987FFA006B92FB /* SwiftDataSwiftUIApp.swift in Sources */,
 				CBFC05212B988065006B92FB /* Book.swift in Sources */,
 			);
