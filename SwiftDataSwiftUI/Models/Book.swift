@@ -5,9 +5,9 @@ import SwiftData
 
 @Model
 final class Book {
-    let title: String
-    let author: String
-    let publishedYear: Int
+    var title: String
+    var author: String
+    var publishedYear: Int
     
     init(title: String, author: String, publishedYear: Int) {
         self.title = title

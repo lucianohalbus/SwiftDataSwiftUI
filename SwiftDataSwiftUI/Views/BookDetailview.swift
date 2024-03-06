@@ -4,8 +4,10 @@ import SwiftUI
 
 struct BookDetailview: View {
     let book: Book
+
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
+    
     @State private var isEditing = false
     @State private var title: String = ""
     @State private var author: String = ""
@@ -28,6 +30,22 @@ struct BookDetailview: View {
                         .keyboardType(.numberPad)
                 }
                 .textFieldStyle(.roundedBorder)
+                
+                Button("Save") {
+                    guard let publishedYear = publishedYear else { return }
+                    book.title = title
+                    book.author = author
+                    book.publishedYear = publishedYear
+                    
+                    do {
+                        try context.save()
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                    
+                    dismiss()
+                }
+                
             } else {
                 Text(book.title)
                 Text(book.author)
