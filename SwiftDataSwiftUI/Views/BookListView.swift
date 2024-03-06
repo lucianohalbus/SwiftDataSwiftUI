@@ -6,6 +6,7 @@ import SwiftData
 struct BookListView: View {
     @Environment(\.modelContext) private var context
     @Query private var books: [Book]
+    @State private var presentAddNew: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -16,6 +17,21 @@ struct BookListView: View {
                 .onDelete(perform: delete(indexSet: ))
             }
             .navigationTitle("Reading Logs")
+            .navigationDestination(for: Book.self) { book in
+                BookDetailview(book: book)
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        presentAddNew.toggle()
+                    } label: {
+                        Image(systemName: "plus.circle.fill")
+                    }
+                    .sheet(isPresented: $presentAddNew, content: {
+                        AddNewBookView()
+                    })
+                }
+            }
         }
     }
     

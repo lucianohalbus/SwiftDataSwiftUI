@@ -19,8 +19,5 @@ struct BookCellView: View {
                 .foregroundColor(.secondary)
             }
         }
-        .navigationDestination(for: Book.self) { book in
-            BookDetailview(book: book)
-        }
     }
 }
