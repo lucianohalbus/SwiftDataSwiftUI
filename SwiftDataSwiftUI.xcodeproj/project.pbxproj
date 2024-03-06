@@ -14,6 +14,7 @@
 		CBFC05212B988065006B92FB /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05202B988065006B92FB /* Book.swift */; };
 		CBFC05242B988177006B92FB /* AddNewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05232B988177006B92FB /* AddNewBookView.swift */; };
 		CBFC05272B98D293006B92FB /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05262B98D293006B92FB /* BookListView.swift */; };
+		CBFC05292B98D442006B92FB /* BookCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05282B98D442006B92FB /* BookCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		CBFC05202B988065006B92FB /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		CBFC05232B988177006B92FB /* AddNewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBookView.swift; sourceTree = "<group>"; };
 		CBFC05262B98D293006B92FB /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		CBFC05282B98D442006B92FB /* BookCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				CBFC05232B988177006B92FB /* AddNewBookView.swift */,
 				CBFC05262B98D293006B92FB /* BookListView.swift */,
+				CBFC05282B98D442006B92FB /* BookCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBFC05242B988177006B92FB /* AddNewBookView.swift in Sources */,
+				CBFC05292B98D442006B92FB /* BookCellView.swift in Sources */,
 				CBFC05152B987FFA006B92FB /* ContentView.swift in Sources */,
 				CBFC05272B98D293006B92FB /* BookListView.swift in Sources */,
 				CBFC05132B987FFA006B92FB /* SwiftDataSwiftUIApp.swift in Sources */,

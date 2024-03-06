@@ -10,7 +10,7 @@ struct BookListView: View {
         NavigationStack {
             List {
                 ForEach(books) { book in
-                    Text(book.title)
+                   BookCellView(book: book)
                 }
             }
             .navigationTitle("Reading Logs")
