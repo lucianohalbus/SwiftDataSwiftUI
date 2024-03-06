@@ -6,16 +6,21 @@ struct BookCellView: View {
     let book: Book
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(book.title)
-            
-            HStack {
-                Text("Author: \(book.author)")
+        NavigationLink(value: book) {
+            VStack(alignment: .leading) {
+                Text(book.title)
+                
+                HStack {
+                    Text("Author: \(book.author)")
 
-                Text("Published on: \(book.publishedYear.description)")
+                    Text("Published on: \(book.publishedYear.description)")
+                }
+                .font(.subheadline)
+                .foregroundColor(.secondary)
             }
-            .font(.subheadline)
-            .foregroundColor(.secondary)
+        }
+        .navigationDestination(for: Book.self) { book in
+            BookDetailview(book: book)
         }
     }
 }

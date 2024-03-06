@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB74E64C2B98DDBC005A5B92 /* BookDetailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74E64B2B98DDBC005A5B92 /* BookDetailview.swift */; };
 		CBFC05132B987FFA006B92FB /* SwiftDataSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05122B987FFA006B92FB /* SwiftDataSwiftUIApp.swift */; };
 		CBFC05152B987FFA006B92FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05142B987FFA006B92FB /* ContentView.swift */; };
 		CBFC05172B987FFC006B92FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFC05162B987FFC006B92FB /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB74E64B2B98DDBC005A5B92 /* BookDetailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailview.swift; sourceTree = "<group>"; };
 		CBFC050F2B987FFA006B92FB /* SwiftDataSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFC05122B987FFA006B92FB /* SwiftDataSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataSwiftUIApp.swift; sourceTree = "<group>"; };
 		CBFC05142B987FFA006B92FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				CBFC05232B988177006B92FB /* AddNewBookView.swift */,
 				CBFC05262B98D293006B92FB /* BookListView.swift */,
 				CBFC05282B98D442006B92FB /* BookCellView.swift */,
+				CB74E64B2B98DDBC005A5B92 /* BookDetailview.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				CBFC05242B988177006B92FB /* AddNewBookView.swift in Sources */,
 				CBFC05292B98D442006B92FB /* BookCellView.swift in Sources */,
+				CB74E64C2B98DDBC005A5B92 /* BookDetailview.swift in Sources */,
 				CBFC05152B987FFA006B92FB /* ContentView.swift in Sources */,
 				CBFC05272B98D293006B92FB /* BookListView.swift in Sources */,
 				CBFC05132B987FFA006B92FB /* SwiftDataSwiftUIApp.swift in Sources */,
