@@ -33,6 +33,7 @@ struct BookDetailview: View {
                 
                 Button("Save") {
                     guard let publishedYear = publishedYear else { return }
+                    
                     book.title = title
                     book.author = author
                     book.publishedYear = publishedYear
