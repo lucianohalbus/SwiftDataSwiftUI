@@ -36,20 +36,30 @@ struct BookDetailview: View {
                 matching: .images,
                 photoLibrary: .shared()
             ) {
-                Label("Add Cover", systemImage: "book.closed")
+                Label(book.cover == nil ? "Add Cover" : "Update Cover", systemImage: "book.closed")
             }
             .padding(.vertical)
            
             Spacer()
             
-            if let selectedCoverData, let image = UIImage(data: selectedCoverData) {
+            if let selectedCoverData, 
+                let image = UIImage(data: selectedCoverData) {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
                     .clipShape(.rect(cornerRadius: 5))
                     .frame(width: 100, height: 100)
-            } else {
+            } else if let cover = book.cover,
+                      let image = UIImage(data: cover) {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(.rect(cornerRadius: 5))
+                    .frame(width: 100, height: 100)
+            }
+            else {
                 Image(systemName: "photo")
+                    .resizable()
                     .scaledToFit()
                     .frame(width: 100, height: 100)
             }
