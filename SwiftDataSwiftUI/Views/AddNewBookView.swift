@@ -41,8 +41,13 @@ struct AddNewBookView: View {
                     
                     Spacer()
                     
-                    if let selectedCoverData {
-                        
+                    if let selectedCoverData,
+                       let image = UIImage(data: selectedCoverData) {
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFit()
+                            .clipShape(.rect(cornerRadius: 10))
+                            .frame(width: 100, height: 100)
                     } else {
                         Image(systemName: "photo")
                             .resizable()
@@ -98,8 +103,11 @@ struct AddNewBookView: View {
             }
             .padding()
             .navigationTitle("Add New Book")
-            
-            Spacer()
+            .task(id: selectedCover) {
+                if let data = try? await selectedCover?.loadTransferable(type: Data.self) {
+                    selectedCoverData = data
+                }
+            }
         }
     }
 }
