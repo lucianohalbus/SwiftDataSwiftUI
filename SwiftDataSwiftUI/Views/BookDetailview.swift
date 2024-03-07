@@ -31,7 +31,7 @@ struct BookDetailview: View {
                 Group {
                     TextField("Book title", text: $title)
                     TextField("Book author", text: $author)
-                    TextField("Book published year", value: $publishedYear, formatter: NumberFormatter())
+                    TextField("Book published year", value: $publishedYear, format: .number.grouping(.never))
                         .keyboardType(.numberPad)
                     
                     // genres
@@ -85,22 +85,24 @@ struct BookDetailview: View {
                 }
             }
             
-            Section("Notes") {
-                Button("Add new note") {
-                    showAddNewNote.toggle()
-                }
-                .sheet(isPresented: $showAddNewNote) {
-                    NavigationStack {
-                        AddNewNote(book: book)
+            if !isEditing {
+                Section("Notes") {
+                    Button("Add new note") {
+                        showAddNewNote.toggle()
                     }
-                    .presentationDetents([.fraction(0.3)])
-                    .interactiveDismissDisabled()
-                }
-                
-                if book.notes.isEmpty {
-                    ContentUnavailableView("No notes!", systemImage: "note")
-                } else {
-                    NotesListView(book: book)
+                    .sheet(isPresented: $showAddNewNote) {
+                        NavigationStack {
+                            AddNewNote(book: book)
+                        }
+                        .presentationDetents([.fraction(0.3)])
+                        .interactiveDismissDisabled()
+                    }
+                    
+                    if book.notes.isEmpty {
+                        ContentUnavailableView("No notes!", systemImage: "note")
+                    } else {
+                        NotesListView(book: book)
+                    }
                 }
             }
         }
@@ -109,6 +111,7 @@ struct BookDetailview: View {
                 Button(isEditing ? "Done" : "Edit") {
                     isEditing.toggle()
                 }
+                .hidden(isEnabled: isEditing)
             }
         }
         .navigationTitle("Book detail")

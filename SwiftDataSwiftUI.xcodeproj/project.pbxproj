@@ -16,6 +16,7 @@
 		CB74E6582B993DDE005A5B92 /* AddNewGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74E6572B993DDE005A5B92 /* AddNewGenre.swift */; };
 		CB74E65A2B994453005A5B92 /* GenreSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74E6592B994453005A5B92 /* GenreSelectionView.swift */; };
 		CB74E65C2B9A260A005A5B92 /* GenreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74E65B2B9A260A005A5B92 /* GenreDetailView.swift */; };
+		CB74E65E2B9A2AF7005A5B92 /* HiddenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74E65D2B9A2AF7005A5B92 /* HiddenModifier.swift */; };
 		CBFC05132B987FFA006B92FB /* SwiftDataSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05122B987FFA006B92FB /* SwiftDataSwiftUIApp.swift */; };
 		CBFC05152B987FFA006B92FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05142B987FFA006B92FB /* ContentView.swift */; };
 		CBFC05172B987FFC006B92FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFC05162B987FFC006B92FB /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		CB74E6572B993DDE005A5B92 /* AddNewGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGenre.swift; sourceTree = "<group>"; };
 		CB74E6592B994453005A5B92 /* GenreSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionView.swift; sourceTree = "<group>"; };
 		CB74E65B2B9A260A005A5B92 /* GenreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreDetailView.swift; sourceTree = "<group>"; };
+		CB74E65D2B9A2AF7005A5B92 /* HiddenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenModifier.swift; sourceTree = "<group>"; };
 		CBFC050F2B987FFA006B92FB /* SwiftDataSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFC05122B987FFA006B92FB /* SwiftDataSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataSwiftUIApp.swift; sourceTree = "<group>"; };
 		CBFC05142B987FFA006B92FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				CBFC05182B987FFC006B92FB /* Preview Content */,
 				CBFC05222B9880C2006B92FB /* Models */,
 				CBFC05252B988185006B92FB /* Views */,
+				CB74E65D2B9A2AF7005A5B92 /* HiddenModifier.swift */,
 			);
 			path = SwiftDataSwiftUI;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				CB74E65A2B994453005A5B92 /* GenreSelectionView.swift in Sources */,
 				CB74E6582B993DDE005A5B92 /* AddNewGenre.swift in Sources */,
 				CB74E65C2B9A260A005A5B92 /* GenreDetailView.swift in Sources */,
+				CB74E65E2B9A2AF7005A5B92 /* HiddenModifier.swift in Sources */,
 				CBFC05152B987FFA006B92FB /* ContentView.swift in Sources */,
 				CBFC05272B98D293006B92FB /* BookListView.swift in Sources */,
 				CBFC05132B987FFA006B92FB /* SwiftDataSwiftUIApp.swift in Sources */,
