@@ -5,8 +5,8 @@ import SwiftData
 
 @Model
 final class Genre {
-    let name: String
-    let books: [Book] = []
+    var name: String
+    var books: [Book] = []
     
     init(name: String) {
         self.name = name

@@ -24,7 +24,7 @@ struct AddNewBookView: View {
                 TextField("Enter book title: ", text: $title)
                     .textFieldStyle(.roundedBorder)
                 
-                Text("Book Author: ")
+                Text("Author: ")
                 TextField("Enter author", text: $author)
                     .textFieldStyle(.roundedBorder)
                 
@@ -50,6 +50,13 @@ struct AddNewBookView: View {
                             author: author,
                             publishedYear: publishedYear
                         )
+                        
+                        book.genres = Array(selectedGenres)
+                        
+                        selectedGenres.forEach { genre in
+                            genre.books.append(book)
+                            context.insert(genre)
+                        }
                         
                         context.insert(book)
                         
