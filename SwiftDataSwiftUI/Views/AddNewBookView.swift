@@ -2,11 +2,15 @@
 
 import SwiftUI
 import SwiftData
+import PhotosUI
 
 struct AddNewBookView: View {
     @State var title: String = ""
     @State var author: String = ""
     @State var publishedYear: Int?
+    
+    @State private var selectedCover: PhotosPickerItem?
+    @State private var selectedCoverData: Data?
     
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
@@ -27,6 +31,26 @@ struct AddNewBookView: View {
                 Text("Author: ")
                 TextField("Enter author", text: $author)
                     .textFieldStyle(.roundedBorder)
+                
+                HStack {
+                    PhotosPicker(selection: $selectedCover, matching: .images, photoLibrary: .shared()) {
+                        
+                        Label("Add Cover", systemImage: "book.closed")
+                    }
+                    .padding(.vertical)
+                    
+                    Spacer()
+                    
+                    if let selectedCoverData {
+                        
+                    } else {
+                        Image(systemName: "photo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 100, height: 100)
+                    }
+                }
+                
                 
                 Text("Published Year: ")
                 TextField("Enter published year", value: $publishedYear, format: .number)
