@@ -11,6 +11,8 @@ struct AddNewBookView: View {
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
     
+    @State private var selectedGenres = Set<Genre>()
+    
     private var isValid: Bool {
         !title.isEmpty && !author.isEmpty && publishedYear != nil
     }
@@ -30,6 +32,8 @@ struct AddNewBookView: View {
                 TextField("Enter published year", value: $publishedYear, format: .number)
                     .textFieldStyle(.roundedBorder)
                     .keyboardType(.numberPad)
+                
+                GenreSelectionView(selectedGenres: $selectedGenres)
                 
                 HStack {
                     Button("Cancel", role: .destructive) {
