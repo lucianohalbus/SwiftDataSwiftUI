@@ -34,7 +34,7 @@ struct BookDetailview: View {
                     TextField("Book published year", value: $publishedYear, formatter: NumberFormatter())
                         .keyboardType(.numberPad)
                     
-                    // Genres
+                    // genres
                     GenreSelectionView(selectedGenres: $selectedGenres)
                         .frame(height: 300)
                 }
