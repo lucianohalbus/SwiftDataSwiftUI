@@ -82,6 +82,10 @@ struct AddNewBookView: View {
                         
                         book.genres = Array(selectedGenres)
                         
+                        if let selectedCoverData {
+                            book.cover = selectedCoverData
+                        }
+                        
                         selectedGenres.forEach { genre in
                             genre.books.append(book)
                             context.insert(genre)
