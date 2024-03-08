@@ -17,12 +17,7 @@ struct BookListView: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(filteredBooks) { book in
-                   BookCellView(book: book)
-                }
-                .onDelete(perform: delete(indexSet: ))
-            }
+            BookListSubView(searchTerm: searchTerm)
             .searchable(text: $searchTerm, prompt: "Search book title")
             .navigationTitle("Reading Logs")
             .navigationDestination(for: Book.self) { book in
@@ -39,19 +34,6 @@ struct BookListView: View {
                         AddNewBookView()
                     })
                 }
-            }
-        }
-    }
-    
-    private func delete(indexSet: IndexSet) {
-        indexSet.forEach { index in
-            let book = books[index]
-            context.delete(book)
-            
-            do {
-                try context.save()
-            } catch {
-                print(error.localizedDescription)
             }
         }
     }
