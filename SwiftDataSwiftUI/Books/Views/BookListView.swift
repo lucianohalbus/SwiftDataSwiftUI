@@ -22,8 +22,8 @@ struct BookListView: View {
                    BookCellView(book: book)
                 }
                 .onDelete(perform: delete(indexSet: ))
-                .searchable(text: $searchTerm, prompt: "Search book title")
             }
+            .searchable(text: $searchTerm, prompt: "Search book title")
             .navigationTitle("Reading Logs")
             .navigationDestination(for: Book.self) { book in
                 BookDetailview(book: book)

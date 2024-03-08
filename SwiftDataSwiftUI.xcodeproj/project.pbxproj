@@ -60,6 +60,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB74E65F2B9B798A005A5B92 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				CB74E6672B9B79D6005A5B92 /* Views */,
+				CB74E6662B9B79CC005A5B92 /* Models */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		CB74E6602B9B7995005A5B92 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				CB74E6652B9B79C1005A5B92 /* Views */,
+				CB74E6642B9B79BA005A5B92 /* Models */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		CB74E6612B9B799E005A5B92 /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				CB74E6632B9B79B3005A5B92 /* Views */,
+				CB74E6622B9B79AC005A5B92 /* Models */,
+			);
+			path = Genres;
+			sourceTree = "<group>";
+		};
+		CB74E6622B9B79AC005A5B92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB74E6532B993987005A5B92 /* Genre.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB74E6632B9B79B3005A5B92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB74E6552B993AAE005A5B92 /* GenreListView.swift */,
+				CB74E6572B993DDE005A5B92 /* AddNewGenre.swift */,
+				CB74E6592B994453005A5B92 /* GenreSelectionView.swift */,
+				CB74E65B2B9A260A005A5B92 /* GenreDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB74E6642B9B79BA005A5B92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB74E64D2B98FD15005A5B92 /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB74E6652B9B79C1005A5B92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB74E64F2B98FFB3005A5B92 /* AddNewNote.swift */,
+				CB74E6512B99019D005A5B92 /* NotesListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB74E6662B9B79CC005A5B92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBFC05202B988065006B92FB /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB74E6672B9B79D6005A5B92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBFC05232B988177006B92FB /* AddNewBookView.swift */,
+				CBFC05262B98D293006B92FB /* BookListView.swift */,
+				CBFC05282B98D442006B92FB /* BookCellView.swift */,
+				CB74E64B2B98DDBC005A5B92 /* BookDetailview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CBFC05062B987FFA006B92FB = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +161,14 @@
 		CBFC05112B987FFA006B92FB /* SwiftDataSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CBFC05252B988185006B92FB /* Components */,
+				CB74E6612B9B799E005A5B92 /* Genres */,
+				CB74E6602B9B7995005A5B92 /* Notes */,
+				CB74E65F2B9B798A005A5B92 /* Books */,
 				CBFC05122B987FFA006B92FB /* SwiftDataSwiftUIApp.swift */,
 				CBFC05142B987FFA006B92FB /* ContentView.swift */,
 				CBFC05162B987FFC006B92FB /* Assets.xcassets */,
 				CBFC05182B987FFC006B92FB /* Preview Content */,
-				CBFC05222B9880C2006B92FB /* Models */,
-				CBFC05252B988185006B92FB /* Views */,
-				CB74E65D2B9A2AF7005A5B92 /* HiddenModifier.swift */,
 			);
 			path = SwiftDataSwiftUI;
 			sourceTree = "<group>";
@@ -98,31 +181,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		CBFC05222B9880C2006B92FB /* Models */ = {
+		CBFC05252B988185006B92FB /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				CBFC05202B988065006B92FB /* Book.swift */,
-				CB74E64D2B98FD15005A5B92 /* Note.swift */,
-				CB74E6532B993987005A5B92 /* Genre.swift */,
+				CB74E65D2B9A2AF7005A5B92 /* HiddenModifier.swift */,
 			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		CBFC05252B988185006B92FB /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				CBFC05232B988177006B92FB /* AddNewBookView.swift */,
-				CBFC05262B98D293006B92FB /* BookListView.swift */,
-				CBFC05282B98D442006B92FB /* BookCellView.swift */,
-				CB74E64B2B98DDBC005A5B92 /* BookDetailview.swift */,
-				CB74E64F2B98FFB3005A5B92 /* AddNewNote.swift */,
-				CB74E6512B99019D005A5B92 /* NotesListView.swift */,
-				CB74E6552B993AAE005A5B92 /* GenreListView.swift */,
-				CB74E6572B993DDE005A5B92 /* AddNewGenre.swift */,
-				CB74E6592B994453005A5B92 /* GenreSelectionView.swift */,
-				CB74E65B2B9A260A005A5B92 /* GenreDetailView.swift */,
-			);
-			path = Views;
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
