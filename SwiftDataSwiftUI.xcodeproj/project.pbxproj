@@ -20,6 +20,7 @@
 		CB74E6692B9B7EE8005A5B92 /* GenreSortOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74E6682B9B7EE8005A5B92 /* GenreSortOrder.swift */; };
 		CB74E66B2B9B7FF2005A5B92 /* GenreListSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74E66A2B9B7FF2005A5B92 /* GenreListSubView.swift */; };
 		CB74E66D2B9B84C7005A5B92 /* BookListSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74E66C2B9B84C7005A5B92 /* BookListSubView.swift */; };
+		CB74E66F2B9B896C005A5B92 /* SortingOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74E66E2B9B896C005A5B92 /* SortingOption.swift */; };
 		CBFC05132B987FFA006B92FB /* SwiftDataSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05122B987FFA006B92FB /* SwiftDataSwiftUIApp.swift */; };
 		CBFC05152B987FFA006B92FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC05142B987FFA006B92FB /* ContentView.swift */; };
 		CBFC05172B987FFC006B92FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFC05162B987FFC006B92FB /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		CB74E6682B9B7EE8005A5B92 /* GenreSortOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSortOrder.swift; sourceTree = "<group>"; };
 		CB74E66A2B9B7FF2005A5B92 /* GenreListSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListSubView.swift; sourceTree = "<group>"; };
 		CB74E66C2B9B84C7005A5B92 /* BookListSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListSubView.swift; sourceTree = "<group>"; };
+		CB74E66E2B9B896C005A5B92 /* SortingOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingOption.swift; sourceTree = "<group>"; };
 		CBFC050F2B987FFA006B92FB /* SwiftDataSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFC05122B987FFA006B92FB /* SwiftDataSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataSwiftUIApp.swift; sourceTree = "<group>"; };
 		CBFC05142B987FFA006B92FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				CBFC05202B988065006B92FB /* Book.swift */,
+				CB74E66E2B9B896C005A5B92 /* SortingOption.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				CB74E6522B99019D005A5B92 /* NotesListView.swift in Sources */,
 				CB74E6542B993987005A5B92 /* Genre.swift in Sources */,
 				CB74E64C2B98DDBC005A5B92 /* BookDetailview.swift in Sources */,
+				CB74E66F2B9B896C005A5B92 /* SortingOption.swift in Sources */,
 				CB74E66B2B9B7FF2005A5B92 /* GenreListSubView.swift in Sources */,
 				CB74E6502B98FFB3005A5B92 /* AddNewNote.swift in Sources */,
 				CB74E64E2B98FD15005A5B92 /* Note.swift in Sources */,
